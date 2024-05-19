@@ -31,7 +31,7 @@ def bimmerPlayListCreation(dirKey, driveLoc):
     playList = open(dir + ".m3u", "w")
 
     for song in songs:
-        playList.write(song.replace("/", "\\") + "\r\n")
+        playList.write(song + "\r\n")
 
 if __name__ == '__main__':
     main()
